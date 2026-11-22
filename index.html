@@ -434,9 +434,13 @@ html:not(.lite) .gb.g{animation:mBtn .5s cubic-bezier(.34,1.56,.64,1) .2s backwa
  .ws3{background:radial-gradient(closest-side,#8ee6ff 68%,#8ee6ff00)}
  .wcd{position:relative;overflow:hidden;isolation:isolate;background:none;animation:none}
  #wel.wgo .wcd{animation:wcardx .95s .2s cubic-bezier(.22,1,.36,1) backwards}
- .wcd:before{content:"";position:absolute;inset:-100%;z-index:-1;background:conic-gradient(#ff9a3d,#ffd54a,#6fd16d,#4fc3f7,#c79bff,#ff7a9a,#ff9a3d);animation:wring 7s linear infinite;will-change:transform}
+ .wcd:before{content:"";position:absolute;left:50%;top:50%;width:var(--d,200%);aspect-ratio:1;margin:calc(var(--d,200%)/-2) 0 0 calc(var(--d,200%)/-2);z-index:-1;background:conic-gradient(#ff9a3d,#ffd54a,#6fd16d,#4fc3f7,#c79bff,#ff7a9a,#ff9a3d);animation:wring 7s linear infinite;will-change:transform}
+ .wcd .wci{will-change:transform}
+ html.wopen body>:not(#wel),html.wopen body>:not(#wel) *,html.wopen body>:not(#wel) *::before,html.wopen body>:not(#wel) *::after{animation-play-state:paused!important}
  .lite .wcd:before{display:none}
+ .wstart:after{animation:wshine2 2.8s ease-in-out infinite}
 }
+@keyframes wshine2{to{transform:translateX(500%) skew(-20deg)}}
 @keyframes wring{to{transform:rotate(360deg)}}
 </style>
 <style id="ui">
@@ -1096,4 +1100,14 @@ storyScene=function(i,st,l){if(i<N0)return _ss(i,st,l);
 })();
 
 if('serviceWorker'in navigator&&/^https?:/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+
+(function(){
+ const wel=document.getElementById('wel');if(!wel)return;
+ const root=document.documentElement;let tm=0;
+ function ring(){const c=wel.querySelector('.wcd');if(c&&c.offsetWidth)c.style.setProperty('--d',Math.ceil(Math.hypot(c.offsetWidth,c.offsetHeight)+6)+'px')}
+ function sync(){const on=wel.classList.contains('on');clearTimeout(tm);
+  if(on){ring();tm=setTimeout(()=>root.classList.add('wopen'),2600)}else root.classList.remove('wopen')}
+ new MutationObserver(sync).observe(wel,{attributes:true,attributeFilter:['class'],childList:true});
+ addEventListener('resize',ring);sync();
+})();
 </script></body></html>
