@@ -1,15 +1,11 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <script>(function(){var g=Storage.prototype.getItem,st=Storage.prototype.setItem;window.__lsGet=function(k){return g.call(localStorage,k)};try{var x=JSON.parse(g.call(localStorage,'khotwaty3.x')||'{}'),c=+x.cur||0;if(c>0){var m=function(k){return k==='khotwaty3'?'khotwaty3_p'+c:k};Storage.prototype.getItem=function(k){return g.call(this,m(k))};Storage.prototype.setItem=function(k,v){return st.call(this,m(k),v)}}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#7fd3f7"><meta name="description" content="نتعلّم ونلعب خطوةً خطوة مع خُطوتي."><meta name="color-scheme" content="light">
 <title>خُطوتي | Khotwaty</title>
-<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600..900&display=swap" rel="stylesheet"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237fd3f7'/%3E%3Ccircle cx='32' cy='32' r='15' fill='%23ffc531'/%3E%3C/svg%3E"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><meta property="og:image" content="og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta property="og:title" content="خُطوتي | Khotwaty"><meta property="og:description" content="نتعلّم ونلعب خطوةً خطوة مع خُطوتي."><meta property="og:type" content="website"><meta property="og:locale" content="ar_EG">
 <style>
-@font-face{font-family:Cairo;font-weight:600;font-display:swap;src:url(fonts/cairo-arabic-600.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}
-@font-face{font-family:Cairo;font-weight:800 900;font-display:swap;src:url(fonts/cairo-arabic-800.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}
-@font-face{font-family:Cairo;font-weight:600;font-display:swap;src:url(fonts/cairo-latin-600.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
-@font-face{font-family:Cairo;font-weight:800 900;font-display:swap;src:url(fonts/cairo-latin-800.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
 .wp .mas{animation:wdrop 1s cubic-bezier(.34,1.56,.64,1) both}@keyframes wdrop{from{opacity:0;transform:translateY(-140px) scale(.5) rotate(-25deg)}}
 .wp .card{animation:wcard .9s .35s cubic-bezier(.22,1,.36,1) both}@keyframes wcard{from{opacity:0;transform:translateY(70px) scale(.92)}}
 .wp .card>*{animation:wfup .7s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.7s + var(--n,0)*.13s)}@keyframes wfup{from{opacity:0;transform:translateY(20px)}}
@@ -66,7 +62,7 @@
 :root{--ink:#27325a;--fs:1}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{font-size:calc(16px*var(--fs))}
-body{margin:0;min-height:100vh;font-family:"Cairo","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;font-weight:600;color:var(--ink);background:linear-gradient(#8bd8f5,#d4f2ff 54%,#fff7dc);overflow-x:hidden;line-height:1.7}
+body{margin:0;min-height:100vh;font-family:"Cairo",system-ui,-apple-system,"Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;font-weight:600;color:var(--ink);background:linear-gradient(#8bd8f5,#d4f2ff 54%,#fff7dc);overflow-x:hidden;line-height:1.7}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 .sky{position:fixed;inset:0;z-index:-1;overflow:hidden}
 .cl{position:absolute;background:#fff;border-radius:99px;opacity:.9;animation:drift 40s linear infinite}
@@ -429,7 +425,45 @@ html:not(.lite) .gb.g{animation:mBtn .5s cubic-bezier(.34,1.56,.64,1) .2s backwa
 .prof button.add{background:#ffd54a}
 .prof small{width:100%;opacity:.7}
 #app>div{padding-bottom:110px}
-</style></head><body><noscript><p style="padding:24px;font:700 1.2rem sans-serif;text-align:center">يحتاج «خُطوتي» إلى تفعيل JavaScript ليعمل.</p></noscript>
+</style><style id="mob">
+@media (hover:none) and (pointer:coarse),(max-width:820px){
+ button,a,.t,.gb,.opt,.isl{touch-action:manipulation}
+ .wbg i{filter:none;will-change:transform}
+ .ws1{background:radial-gradient(closest-side,#ffe27a 68%,#ffe27a00)}
+ .ws2{background:radial-gradient(closest-side,#ff9fc0 68%,#ff9fc000)}
+ .ws3{background:radial-gradient(closest-side,#8ee6ff 68%,#8ee6ff00)}
+ .wcd{position:relative;overflow:hidden;isolation:isolate;background:none;animation:none}
+ #wel.wgo .wcd{animation:wcardx .95s .2s cubic-bezier(.22,1,.36,1) backwards}
+ .wcd:before{content:"";position:absolute;inset:-100%;z-index:-1;background:conic-gradient(#ff9a3d,#ffd54a,#6fd16d,#4fc3f7,#c79bff,#ff7a9a,#ff9a3d);animation:wring 7s linear infinite;will-change:transform}
+ .lite .wcd:before{display:none}
+}
+@keyframes wring{to{transform:rotate(360deg)}}
+</style>
+<style id="ui">
+/* top bar: one tidy capsule for language / music / home / settings */
+.hud .hr{gap:4px;padding:5px;background:#fff;border:1px solid #e6edf7;border-radius:99px;box-shadow:0 4px 0 #0001,0 8px 18px #26345e14;align-items:center}
+.hud .hr .rb{width:44px;height:44px;min-width:44px;min-height:44px;border:0;background:#f3f6ff;box-shadow:none;color:#26345e}
+.hud .hr .rb:active{transform:scale(.9);background:#e4ecff}
+.hud .hr #bl{font-weight:900;font-size:1rem;line-height:1;letter-spacing:0;padding:0}
+.hud .hr .rb svg{width:60%;height:60%}
+.night .hud .hr{background:#2a3a78;border-color:#4a5a9a}
+.night .hud .hr .rb{background:#3a4c92;color:#fff}
+@media(max-width:380px){.hud{padding-left:10px;padding-right:10px}.hud .hr .rb{width:40px;height:40px;min-width:40px;min-height:40px}.hud .hr{gap:3px;padding:4px}.pill{padding:5px 12px 5px 10px;font-size:1.1rem}}
+/* settings sheet: fits phones, rows wrap instead of squeezing */
+.sh{max-height:88vh;max-height:88dvh;overscroll-behavior:contain;padding-bottom:max(24px,env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch}
+.sh:before{content:"";display:block;width:46px;height:5px;border-radius:9px;background:#d5dcef;margin:0 auto 12px}
+.sh .opt{flex-wrap:wrap;row-gap:10px}
+.sh .opt>span{flex:1 1 90px;min-width:0}
+.sh .opt .nm,.sh .opt .seg{flex:1 1 100%;width:100%;min-width:0;box-sizing:border-box}
+.sh .opt .seg button{flex:1;width:auto;min-width:44px;padding:0 12px}
+.sh .opt .nm{font-size:1.1rem}
+.sh .opt .sw{margin-inline-start:auto}
+.sh .voice-row select{min-width:0;width:100%;flex:1 1 100%}
+.sh .voice-row .gb{flex:1 1 100%}
+.sh .row .gb{flex:1 1 140px;min-height:52px;padding:10px 14px;font-size:1.1rem}
+@media(min-width:561px){.sh .opt{flex-wrap:nowrap}.sh .opt .nm{flex:0 0 150px;width:150px}.sh .opt .seg{flex:0 0 auto;width:auto}.sh .opt>span{flex:1}.sh .voice-row select{width:auto;flex:1;min-width:180px}.sh .voice-row .gb{flex:0 0 auto}}
+</style>
+</head><body><noscript><p style="padding:24px;font:700 1.2rem sans-serif;text-align:center">يحتاج «خُطوتي» إلى تفعيل JavaScript ليعمل.</p></noscript>
 <div class="sky"><i class="cl c1"></i><i class="cl c2"></i><i class="cl c3"></i><i class="bl" style="left:8%;background:#ff7a9a"></i><i class="bl" style="left:30%;background:#ffd54a;animation-delay:-6s"></i><i class="bl" style="left:58%;background:#8a4de0;animation-delay:-12s"></i><i class="bl" style="left:82%;background:#35b94d;animation-delay:-17s"></i><div class="stars" id="stars"></div><i class="moon"></i><i class="bd" style="top:20%"><svg viewBox="0 0 32 14"><path d="M0 8q8-10 16 0q8-10 16 0" stroke="#27325a" stroke-width="3" fill="none" stroke-linecap="round"/></svg></i><i class="bd" style="top:34%;animation-delay:-8s;animation-duration:22s;width:24px"><svg viewBox="0 0 32 14"><path d="M0 8q8-10 16 0q8-10 16 0" stroke="#27325a" stroke-width="3" fill="none" stroke-linecap="round"/></svg></i><div class="hills"><i class="h2"></i><i class="h1"></i><i class="h3"></i></div></div>
 <header class="hud"><div class="pill" role="status" aria-live="polite"><i aria-hidden="true"></i><b id="sc">0</b></div><div class="hr"><button class="rb" id="bl" style="font-weight:900;font-size:1.05rem">EN</button><button class="rb" id="bm" aria-label="music"></button><button class="rb" id="bh" aria-label="home"></button><button class="rb" id="bg" aria-label="settings"></button></div></header>
 <main id="app" tabindex="-1"></main>
@@ -859,7 +893,6 @@ const chips=WG.map((g,i)=>'<div style="--n:'+i+';--h:'+(i*45)+'"><span class="wi
 const paras=WL.map((x,j)=>'<p data-j="'+j+'" style="--n:'+(3+j)+'">'+esc(x)+'</p>').join('');
 $('wel').innerHTML='<div class="wbg"><i class="ws1"></i><i class="ws2"></i><i class="ws3"></i></div><div class="wfloat" aria-hidden="true">'+fl+'</div><i class="cl wc1"></i><i class="cl wc2"></i>'
 +'<div class="wintro" aria-hidden="true"><div class="wsun">'+SUN+'</div><h1>خُطْوَتِي</h1><small>Khotwaty</small></div>'
-+'<div class="wtop"><button class="gb w sm" id="w_s">'+t('إغلاق','Close')+'</button><button class="gb w sm" id="w_l">'+(wr?t('إيقاف','Pause'):t('اسمع الرسالة','Listen'))+'</button></div>'
 +'<div class="wsc"><div class="wp2"><div class="wmas">'+SUN+'</div><div class="wcd"><div class="wci">'
 +'<h2 class="wt" style="--n:0"><span>خُطْوَتِي</span></h2><i class="wline" style="--n:1"></i>'
 +'<p class="wto2" style="--n:2"><small>إلى سعادة الدكتورة</small><br><span class="nm2">إيمان الكاشف</span></p>'
@@ -870,14 +903,14 @@ $('wel').innerHTML='<div class="wbg"><i class="ws1"></i><i class="ws2"></i><i cl
 +'</div></div></div></div>'
 +'<div class="wbot"><button class="gb pulse wstart" id="w_n">'+ib('rocket')+'ابدأ الرحلة</button></div>'
 +'<div class="hl"><i style="width:70%;height:100%;right:-10%;background:#9be37a"></i><i style="width:80%;height:80%;left:-15%;background:#6fd16d"></i></div>';
-$('w_s').onclick=wend;$('w_n').onclick=wend;$('w_l').onclick=wread;
+$('w_n').onclick=wend;
 const w=$('wel'),card=w.querySelector('.wcd');
 w.onpointermove=e=>{if(e.pointerType==='touch'||root.classList.contains('lite')||!card)return;const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;card.style.setProperty('--ry',(x*7).toFixed(2)+'deg');card.style.setProperty('--rx',(-y*5).toFixed(2)+'deg');w.style.setProperty('--px',x.toFixed(3))};
 w.onpointerleave=()=>{if(card){card.style.setProperty('--ry','0deg');card.style.setProperty('--rx','0deg')}}}
 function wstop(){wq++;SQ++;wr=0;try{speechSynthesis.cancel()}catch(e){}document.querySelectorAll('#wel p.on').forEach(e=>e.classList.remove('on'));const s=document.querySelector('#wel .wmas');if(s)s.classList.remove('talk')}
-function wread(){if(wr){wstop();$('w_l').textContent=t('اسمع الرسالة','Listen');return}
-wr=1;const q=++wq;$('w_l').textContent=t('إيقاف','Pause');const sun=document.querySelector('#wel .wmas');
-const fin=()=>{wstop();$('w_l').textContent=t('اسمع الرسالة','Listen')};
+function wread(){if(wr){wstop();(($('w_l')||{}).textContent)=t('اسمع الرسالة','Listen');return}
+wr=1;const q=++wq;(($('w_l')||{}).textContent)=t('إيقاف','Pause');const sun=document.querySelector('#wel .wmas');
+const fin=()=>{wstop();(($('w_l')||{}).textContent)=t('اسمع الرسالة','Listen')};
 const step=j=>{if(q!==wq)return;if(j>=WL.length){fin();return}
 document.querySelectorAll('#wel p[data-j]').forEach(e=>e.classList.toggle('on',+e.dataset.j===j));
 const el=document.querySelector('#wel p[data-j="'+j+'"]');if(el)el.scrollIntoView({block:'center',behavior:root.classList.contains('lite')?'auto':'smooth'});
@@ -929,7 +962,7 @@ const bk0=d.querySelector('.back');d.insertBefore(h,bk0)};
 const PR=[['أحسنت، أنت رائع','Great job, you are amazing'],['ما شاء الله، خطوة جميلة','Wonderful, a lovely step'],['فخورون بك، واصل','We are proud of you'],['شاطر، جرّب غيرها','Well done, try another']];
 const _done=done;done=function(){_done();const m=PR[Math.floor(Math.random()*PR.length)],e=app.querySelector('.big');if(e)e.textContent=EN()?m[1]:m[0];say(EN()?m[1]:m[0])};
 
-if('serviceWorker'in navigator&&/^https?:/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+
 
 /* music with fade in/out */
 let MG;music=function(){try{AC=AC||new(window.AudioContext||window.webkitAudioContext)()}catch(e){return}
@@ -1061,4 +1094,6 @@ storyScene=function(i,st,l){if(i<N0)return _ss(i,st,l);
  else{bg='#dff5ff';body=sun+'<rect x="0" y="150" width="320" height="50" fill="#6b7385"/><path d="M0 176h320" stroke="#fff" stroke-dasharray="14 12" stroke-width="4"/><rect x="236" y="22" width="36" height="98" rx="10" fill="#33415c"/><circle cx="254" cy="44" r="10" fill="'+(st<3?'#ff4d4d':'#5b2a2a')+'"/><circle cx="254" cy="71" r="10" fill="#6b5a1a"/><circle cx="254" cy="98" r="10" fill="'+(st>=3?'#35d05b':'#1f4a2a')+'"/><rect x="250" y="120" width="8" height="30" fill="#33415c"/>'+g_('kids',40,66,1.4)}
  return '<svg class="story-scene" viewBox="0 0 320 200" role="img" aria-label="'+esc(l)+'">'+SCN(bg,body)+'</svg>'};
 })();
+
+if('serviceWorker'in navigator&&/^https?:/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script></body></html>
